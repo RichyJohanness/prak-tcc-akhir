@@ -8,7 +8,7 @@ steps:
       [
         "run",
         "deploy",
-        "dosen",
+        "pegawai_service",
         "--image",
         "gcr.io/$PROJECT_ID/pegawai_service",
         "--port",
