@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dosen</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a href="index.html">Kembali</a>
+    <h1>Data Dosen</h1>
+    <form>
+      <span>
+        <label for="nama">Nama</label>
+        <input
+          data-id
+          id="nama"
+          type="text"
+          placeholder="Masukkan nama"
+          required
+        />
+      </span>
+      <span style="margin-left: 1rem">
+        <label for="nidn">NIDN</label>
+        <input
+          data-id
+          id="nidn"
+          type="text"
+          placeholder="Masukkan NIDN"
+          required
+        />
+      </span>
+      <button type="submit">Simpan</button>
+    </form>
+    <main style="margin-top: 1rem">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nama</th>
+            <th>NIDN</th>
+            <th colspan="2">Option</th>
+          </tr>
+        </thead>
+        <tbody id="table-dosen"></tbody>
+      </table>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="dosen.js"></script>
+  </body>
+</html>
